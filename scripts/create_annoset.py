@@ -3,6 +3,11 @@ import os
 import shutil
 import subprocess
 import sys
+caffe_root = '/home/user/caffe'
+import os
+os.chdir(caffe_root)
+import sys
+sys.path.insert(0, 'python')
 
 from caffe.proto import caffe_pb2
 from google.protobuf import text_format
